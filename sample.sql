@@ -31,6 +31,12 @@ CREATE TABLE IF NOT EXISTS `users` (
   `user_pass` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+-- dbs add this
+ CREATE USER 'tomcat'@'localhost' IDENTIFIED BY 'tomcat';
+ GRANT SELECT ON sample.* TO 'tomcat'@'localhost';
+-- --------------------------------------------------------
+
 --
 -- Dumping data for table `users`
 --
